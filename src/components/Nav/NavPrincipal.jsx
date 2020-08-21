@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+import './NavPrincipal.css';
+import CartIcon from './CartIcon';
 
 class NavPrincipal extends React.Component {
   render() {
@@ -19,6 +21,7 @@ class NavPrincipal extends React.Component {
             <Button variant="outline-light">Buscar producto</Button>
           </Form>
         </Navbar.Collapse>
+        <CartIcon className="ml-1"/>
       </Navbar>
     )
   }

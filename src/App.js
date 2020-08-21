@@ -1,28 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import NavPrincipal from './components/NavPrincipal'
+import NavPrincipal from './components/Nav/NavPrincipal'
+import Home from './components/Home/Home'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <div>
+    <div className="d-flex flex-column h-100">
       <NavPrincipal />
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a>
-        </header>
-      </div>
+      <Home greeting='Bienvenido al sitio de compras onLine'/>
+      <Footer/>
     </div>
   );
 }
