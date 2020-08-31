@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Card, Button, ButtonGroup } from 'react-bootstrap';
 
 const ItemCount = props => {
 
@@ -30,18 +30,18 @@ const ItemCount = props => {
     }
 
     return (
-        <div className="card text-center w-25">
-            <div className="card-body">
-                <p className="card-title">Producto descripcion</p>
+        <div>
+            <Card style={{ width: '18rem' }}>
+            <Card.Body>
+                <Card.Text>Producto descripcion</Card.Text>
                 <ButtonGroup>
                     <Button variant="primary" onClick={decrementa}>-</Button>
                     <input type="text" value={contador} className="text-center" readOnly />
                     <Button variant="primary" onClick={incrementa}>+</Button>
                 </ButtonGroup>
-                <div>
-                    <Button variant="primary mt-2 btn-block" onClick={onUp}>Agregar al carrito</Button>
-                </div>
-            </div>
+                <Button variant="primary mt-2 btn-block" onClick={onUp}>Agregar al carrito</Button>
+                </Card.Body>
+            </Card>
         </div>
     );
 
