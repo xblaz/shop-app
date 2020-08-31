@@ -5,7 +5,8 @@ export default function Contador() {
     return (
         <div>
             <p className="h4">Clic en el botón para incrementar contador</p>
-            <button className="btn btn-primary" onClick={() => setContador(contador+1)}>Incrementar</button>
+            <button className="btn btn-primary" onClick={() => setContador(contador+1)}>[+]</button>
+            <button className="btn btn-primary" onClick={() => setContador(contador-1)}>[-]</button>
             <p className="h4">Contador de clic: {contador}</p>
         </div>
     );

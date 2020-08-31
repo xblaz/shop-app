@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Home.css';
-import Contador from '../Contador/Contador'
+//import Contador from '../Contador/Contador'
+import ItemCount from '../Contador/ItemCount'
 
 const Home = (props) => {
     return (
@@ -15,11 +16,17 @@ const Home = (props) => {
                 </Col>
             </Row>
             <Row>
-                <Col className="mx-auto text-center">
-                    <Contador />
+                <Col className="mx-auto align-center">
+                    <ItemCount initial="1" max="10" min="1" onAdd={agregarItem} />
                 </Col>
             </Row>
         </Container>
     )
 }
+
+function agregarItem(contador) {
+    alert('Cantidad de Items: ' + contador);
+    console.log('Cantidade items: ' + contador)
+}
+
 export default Home;
