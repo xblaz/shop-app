@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Button, ButtonGroup } from 'react-bootstrap';
+import Contador from '../../components/Contador/Contador';
 
 const ItemCount = props => {
 
@@ -31,17 +31,7 @@ const ItemCount = props => {
 
     return (
         <div>
-            <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Text>Producto descripcion</Card.Text>
-                <ButtonGroup>
-                    <Button variant="primary" onClick={decrementa}>-</Button>
-                    <input type="text" value={contador} className="text-center" readOnly />
-                    <Button variant="primary" onClick={incrementa}>+</Button>
-                </ButtonGroup>
-                <Button variant="primary mt-2 btn-block" onClick={onUp}>Agregar al carrito</Button>
-                </Card.Body>
-            </Card>
+            <Contador  decrementa={decrementa} incrementa={incrementa} onUp={onUp} contador={contador} />
         </div>
     );
 

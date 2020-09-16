@@ -1,0 +1,37 @@
+[
+    {
+        "id" : "1",
+        "titulo" : "Placa De Video Radeon Hd 5450",
+        "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+        "precio" : "3.999",
+        "img" : ""
+    },
+    {
+        "id" : "2",
+        "titulo" : "Disco Solido Ssd 240gb Western Digital Green Wd",
+        "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+        "precio" : "3.147",
+        "img" : ""
+    },
+    {
+        "id" : "3",
+        "titulo" : "Turbina Cooler Fan Extractor 220v Ruleman",
+        "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+        "precio" : "1.147",
+        "img" : ""
+    },
+    {
+        "id" : "4",
+        "titulo" : "Placa De Video Radeon RX 7000",
+        "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+        "precio" : "15.000",
+        "img" : ""
+    },
+    {
+        "id" : "5",
+        "titulo" : "Placa De Video NVidia",
+        "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
+        "precio" : "23.500",
+        "img" : ""
+    }
+]

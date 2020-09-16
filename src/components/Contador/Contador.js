@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Card, Button, ButtonGroup } from 'react-bootstrap'; 
 
-export default function Contador() {
-    const [contador, setContador] = useState(0);
+export default function Contador (props) {
     return (
         <div>
-            <p className="h4">Clic en el botón para incrementar contador</p>
-            <button className="btn btn-primary" onClick={() => setContador(contador+1)}>[+]</button>
-            <button className="btn btn-primary" onClick={() => setContador(contador-1)}>[-]</button>
-            <p className="h4">Contador de clic: {contador}</p>
+            <Card style={{ width: '18rem' }}>
+            <Card.Body>
+                <Card.Text>Producto descripcion</Card.Text>
+                <ButtonGroup>
+                    <Button variant="primary" onClick={props.decrementa}>-</Button>
+                    <input type="text" value={props.contador} className="text-center" readOnly />
+                    <Button variant="primary" onClick={props.incrementa}>+</Button>
+                </ButtonGroup>
+                <Button variant="primary mt-2 btn-block" onClick={props.onUp}>Agregar al carrito</Button>
+                </Card.Body>
+            </Card>
         </div>
     );
+
 }
