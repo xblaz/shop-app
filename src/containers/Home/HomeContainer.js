@@ -25,7 +25,7 @@ const HomeContainer = (props) => {
 
     return (
         <>
-        <Home productos={productos} showSpinner={loading} greeting={props.greeting}/>
+        <Home productos={productos} greeting={props.greeting}/>
         </>
     )
 }

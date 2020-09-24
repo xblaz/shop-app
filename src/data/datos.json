@@ -4,34 +4,34 @@
         "titulo" : "Placa De Video Radeon Hd 5450",
         "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
         "precio" : "3.999",
-        "img" : ""
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/618%2BgnhG62L._AC_SX522_.jpg"
     },
     {
         "id" : "2",
         "titulo" : "Disco Solido Ssd 240gb Western Digital Green Wd",
         "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
         "precio" : "3.147",
-        "img" : ""
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/618%2BgnhG62L._AC_SX522_.jpg"
     },
     {
         "id" : "3",
         "titulo" : "Turbina Cooler Fan Extractor 220v Ruleman",
         "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
         "precio" : "1.147",
-        "img" : ""
+        "img" : "https://http2.mlstatic.com/D_NQ_NP_661376-MLA31606007165_072019-O.webp"
     },
     {
         "id" : "4",
         "titulo" : "Placa De Video Radeon RX 7000",
         "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
         "precio" : "15.000",
-        "img" : ""
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/618%2BgnhG62L._AC_SX522_.jpg"
     },
     {
         "id" : "5",
         "titulo" : "Placa De Video NVidia",
         "descripcion" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution",
         "precio" : "23.500",
-        "img" : ""
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/618%2BgnhG62L._AC_SX522_.jpg"
     }
 ]

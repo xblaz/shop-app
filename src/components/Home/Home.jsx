@@ -17,7 +17,7 @@ const Home = (props) => {
             </Row>
             <Row>
                 <Col className="mx-auto align-center">
-                    <Loading showSpinner={props.showSpinner}/>
+                    <Loading/>
                     <ItemList productos={props.productos}/>
 
                 </Col>

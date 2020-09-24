@@ -1,2 +1,2 @@
-const applicationInfo = { name: 'E-Shop app', ver: '1.0' };
+const applicationInfo = { name: 'Mi tienda online', ver: '1.0' };
 export default applicationInfo;
