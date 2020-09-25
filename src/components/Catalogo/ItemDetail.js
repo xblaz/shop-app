@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ItemCount from '../../containers/Contador/ItemCount'
+import Crumb from '../Catalogo/Crumb'
 
 const ItemDetail = (props) => {
-
-    console.log(props.data.titulo)
     return (
         <>
+        <Crumb item={props}/>
         <Container>
             <div className="py-5 text-center">
                 <h1 className="text-center">{props.data.titulo}</h1>

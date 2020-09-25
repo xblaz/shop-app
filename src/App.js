@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import NavPrincipal from './components/Nav/NavPrincipal'
-//import HomeContainer from './containers/Home/HomeContainer'
+import HomeContainer from './containers/Home/HomeContainer'
 import Footer from './components/Footer/Footer'
 import ItemDetailContainer from './containers/Catalogo/ItemDetailContainer';
 import datasource from '../src/data/datos.json'
@@ -15,7 +15,9 @@ function App() {
       <NavPrincipal />
       <Switch>
         <Route exact path="/"> 
-          {/*<HomeContainer greeting='Compras en linea'/>*/}
+          <HomeContainer data={datasource} greeting='Compras en linea'/>
+        </Route>
+        <Route exact path="/item/:id">
           <ItemDetailContainer data={datasource}/>
         </Route>
       </Switch>

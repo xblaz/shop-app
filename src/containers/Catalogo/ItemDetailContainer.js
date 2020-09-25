@@ -1,12 +1,15 @@
 import React , {useEffect, useState} from 'react';
 import ItemDetail from '../../components/Catalogo/ItemDetail';
 import Loading from '../../components/Catalogo/Loading'
+import ProductoNoExiste from '../../components/Catalogo/ProductoNoExiste'
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = (props) => {
 
     const [productos, setProductos] = useState([]);
-    const [unProducto, setUnProducto] = useState();
-    const [loading, setLoading] = useState(false);
+    const [producto, setProducto] = useState();
+    const [loading, setLoading] = useState(true);
+    const { id } = useParams();
     
     useEffect(() => {
         const getDataPromise = new Promise((resolve) => {
@@ -16,27 +19,21 @@ const ItemDetailContainer = (props) => {
         });
 
         getDataPromise.then((d) => {
-            setLoading(true);
+            setLoading(false);
             setProductos(d);
         });
     }, [props.data])
 
     useEffect(() => {
-        const unItemAleatorio = productos.find((_, i, ar) => Math.random() < 1 / (ar.length - i));
-        setUnProducto(unItemAleatorio);
-     }, [productos])
 
-     if (!loading) {
-         return ( <Loading/> )
-     } else {
-        if (unProducto) {
-            return ( 
-                <ItemDetail data={unProducto}/>
-            )
-        } else {
-            return ( <>Producto no encontrado</>)
+        if (productos && productos.length > 0) {
+            const unItem = productos.find(el => el.id === id);
+            setProducto(unItem);
         }
-        
-     }
+     }, [productos,id])
+
+    return (
+        <>{loading ? <Loading/> : producto ? <ItemDetail data={producto}/> : <ProductoNoExiste/> }</>
+    )    
 }
 export default ItemDetailContainer;

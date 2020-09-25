@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Home.css';
 import ItemList from '../Catalogo/ItemList'
-import Loading from '../Catalogo/Loading'
 
 const Home = (props) => {
     return (
@@ -17,9 +16,7 @@ const Home = (props) => {
             </Row>
             <Row>
                 <Col className="mx-auto align-center">
-                    <Loading/>
                     <ItemList productos={props.productos}/>
-
                 </Col>
             </Row>
         </Container>

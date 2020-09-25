@@ -1,23 +1,23 @@
 import React, {useState, useEffect } from 'react';
 import Home from '../../components/Home/Home'
-import datasource from '../../data/datos.json';
+import Loading from '../../components/Catalogo/Loading'
 
 const HomeContainer = (props) => {
 
     const [productos, setProductos] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const getDataPromise = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(datasource);
+                resolve(props.data);
             }, 2000);
         });
         getDataPromise.then((d) => {
+            setLoading(false);
             setProductos(d);
-            setLoading(true);
         });
-    }, [])
+    }, [props.data])
 
     useEffect(() => {
        console.log(productos);
@@ -25,7 +25,7 @@ const HomeContainer = (props) => {
 
     return (
         <>
-        <Home productos={productos} greeting={props.greeting}/>
+            {loading ? <Loading/> : <Home productos={productos} greeting={props.greeting}/>}
         </>
     )
 }
