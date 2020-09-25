@@ -6,7 +6,7 @@ import Crumb from '../Catalogo/Crumb'
 const ItemDetail = (props) => {
     return (
         <>
-        <Crumb item={props}/>
+        <Crumb pagina={props.data.titulo}/>
         <Container>
             <div className="py-5 text-center">
                 <h1 className="text-center">{props.data.titulo}</h1>

@@ -6,6 +6,7 @@ import HomeContainer from './containers/Home/HomeContainer'
 import Footer from './components/Footer/Footer'
 import ItemDetailContainer from './containers/Catalogo/ItemDetailContainer';
 import datasource from '../src/data/datos.json'
+import Cart from './components/Catalogo/Cart'
 
 function App() {
   
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/item/:id">
           <ItemDetailContainer data={datasource}/>
+        </Route>
+        <Route exact path="/cart">
+          <Cart/>
         </Route>
       </Switch>
       <Footer/>

@@ -9,7 +9,7 @@ class NavPrincipal extends React.Component {
   render() {
     return (
       <Navbar bg="primary" collapseOnSelect expand="lg" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         <img
         alt=""
         src={logo}
