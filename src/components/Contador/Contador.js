@@ -9,11 +9,10 @@ export default function Contador (props) {
                 <Card.Text></Card.Text>
                 <ButtonGroup>
                     <Button variant="primary" onClick={props.decrementa}>-</Button>
-                    <input type="text" value={props.contador} className="text-center" readOnly />
+                    <input type="text" value={props.contador} className="text-center" readOnly onChange={props.onChange}/>
                     <Button variant="primary" onClick={props.incrementa}>+</Button>
                 </ButtonGroup>
-                    <Button variant="primary mt-2 btn-block" onClick={props.onUp}>Agregar al carrito</Button>
-                    <Button variant="primary mt-2 btn-block">Comprar !</Button>
+                    <Button variant="primary mt-2 btn-block">Agregar al carrito</Button>
                 </Card.Body>
             </Card>
         </div>

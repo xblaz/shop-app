@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Contador from '../../components/Contador/Contador';
 
+
 const ItemCount = props => {
 
     const [contador, setContador] = useState(0);
@@ -22,16 +23,10 @@ const ItemCount = props => {
             setContador(contador - 1)
         }
     }
-    const onUp = ()  => {
-        if (props.onAdd) {
-            console.log('ejecutando callback... ')
-            props.onAdd(contador);
-        }
-    }
 
     return (
         <div>
-            <Contador  decrementa={decrementa} incrementa={incrementa} onUp={onUp} contador={contador} />
+            <Contador  decrementa={decrementa} incrementa={incrementa} onChange={props.onAddProducto(contador)} contador={contador} />
         </div>
     );
 
