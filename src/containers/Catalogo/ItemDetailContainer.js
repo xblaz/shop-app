@@ -4,6 +4,7 @@ import Loading from '../../components/Catalogo/Loading'
 import ProductoNoExiste from '../../components/Catalogo/ProductoNoExiste'
 import { useParams } from 'react-router-dom';
 
+
 const ItemDetailContainer = (props) => {
 
     const [productos, setProductos] = useState([]);
@@ -11,6 +12,7 @@ const ItemDetailContainer = (props) => {
     const [loading, setLoading] = useState(true);
     const { id } = useParams();
     
+
     useEffect(() => {
         const getDataPromise = new Promise((resolve) => {
             setTimeout(() => {
@@ -30,7 +32,9 @@ const ItemDetailContainer = (props) => {
             const unItem = productos.find(el => el.id === id);
             setProducto(unItem);
         }
-     }, [productos,id])
+    }, [productos,id])
+
+  
 
     return (
         <>{loading ? <Loading/> : producto ? <ItemDetail data={producto}/> : <ProductoNoExiste/> }</>
